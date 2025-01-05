@@ -1,13 +1,12 @@
-# defaultNamespace: cert-manager
-# helm:
-#   repo: https://charts.jetstack.io
-#   version: 1.16.2
-#   chart: cert-manager
-#   releaseName: cert-manager
-#   values:
-#     crds:
-#       enabled: true
-
+defaultNamespace: cert-manager
+helm:
+  repo: https://charts.jetstack.io
+  version: 1.16.2
+  chart: cert-manager
+  releaseName: cert-manager
+  values:
+    crds:
+      enabled: true
 # targetCustomizations:
 #   - name: dev
 #     helm:
