@@ -1,0 +1,6 @@
+defaultNamespace: external-secrets
+helm:
+  repo: https://charts.external-secrets.io
+  version: 0.12.1
+  chart: external-secrets
+  releaseName: external-secrets
