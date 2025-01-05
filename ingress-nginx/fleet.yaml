@@ -1,0 +1,13 @@
+defaultNamespace: ingress-nginx
+helm:
+  repo: https://kubernetes.github.io/ingress-nginx
+  version: 4.12.0
+  chart: ingress-nginx
+  releaseName: ingress-nginx
+  values:
+    controller:
+      watchIngressWithoutClass: true
+      service:
+        externalTrafficPolicy: Local # needed to preserve client source IP
+      ingressClassResource:
+        default: true
