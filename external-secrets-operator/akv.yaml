@@ -1,0 +1,18 @@
+apiVersion: external-secrets.io/v1alpha1
+kind: ClusterSecretStore
+metadata:
+  name: akv
+spec:
+  provider:
+    azurekv:
+      tenantId: "2636d418-dbf7-430f-b6ca-f9adad300d54"
+      vaultUrl: "https://alexs-test-vault.vault.azure.net/"
+      authSecretRef:
+        clientId:
+          namespace: external-secrets
+          name: azure-secret-sp
+          key: ClientID
+        clientSecret:
+          namespace: external-secrets
+          name: azure-secret-sp
+          key: ClientSecret
