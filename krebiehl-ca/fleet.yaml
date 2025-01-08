@@ -1,0 +1,4 @@
+defaultNamespace: cert-manager
+dependsOn:
+  - name: cert-manager
+  - name: external-secrets-operator-akv
