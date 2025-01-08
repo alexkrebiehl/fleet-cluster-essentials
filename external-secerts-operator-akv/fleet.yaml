@@ -1,3 +1,1 @@
 defaultNamespace: external-secrets
-dependsOn:
-  - name: fleet-cluster-essentials-external-secrets-operator
