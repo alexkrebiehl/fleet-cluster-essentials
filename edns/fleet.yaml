@@ -10,13 +10,12 @@ helm:
         key: values.yaml
   values:
     txtOwnerId: "${ global.fleet.clusterName }"
-    provider:
-      name: rfc2136
-      rfc2136:
-        host: "172.21.21.21"
-        port: 53
-        zone: "krebiehl.com."
-        tsigSecretAlg: "hmac-sha512"
-        tsigKeyname: "krebiehl.com."
+    provider: rfc2136
+    rfc2136:
+      host: "172.21.21.21"
+      port: 53
+      zone: "krebiehl.com."
+      tsigSecretAlg: "hmac-sha512"
+      tsigKeyname: "krebiehl.com."
 dependsOn:
   - name: fleet-cluster-essentials-edns-secret
