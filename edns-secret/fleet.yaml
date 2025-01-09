@@ -1,0 +1,3 @@
+defaultNamespace: external-dns
+dependsOn:
+  - name: fleet-cluster-essentials-eso-akv

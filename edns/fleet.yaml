@@ -18,4 +18,4 @@ helm:
       tsigSecretAlg: "hmac-sha512"
       tsigKeyname: "krebiehl.com."
 dependsOn:
-  - name: external-dns-secret
+  - name: fleet-cluster-essentials-edns

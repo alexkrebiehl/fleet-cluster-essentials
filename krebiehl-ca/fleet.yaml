@@ -1,4 +1,4 @@
 defaultNamespace: cert-manager
 dependsOn:
-  - name: cert-manager
-  - name: external-secrets-operator-akv
+  - name: fleet-cluster-essentials-cert-manager
+  - name: fleet-cluster-essentials-eso-akv

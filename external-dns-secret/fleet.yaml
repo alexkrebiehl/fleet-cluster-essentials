@@ -1,3 +1,0 @@
-defaultNamespace: external-dns
-dependsOn:
-  - name: external-secrets-operator-akv
