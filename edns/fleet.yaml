@@ -1,21 +1,21 @@
-# defaultNamespace: external-dns
-# helm:
-#   repo: https://charts.bitnami.com/bitnami
-#   version: 8.7.1
-#   chart: external-dns
-#   releaseName: external-dns
-#   valuesFrom:
-#     - secretKeyRef:
-#         name: krebiehl-dns-tsig
-#         key: tsigSecret
-#   values:
-#     txtOwnerId: global.fleet.clusterName
-#     provider: rfc2136
-#     rfc2136:
-#       host: "172.21.21.21"
-#       port: 53
-#       zone: "krebiehl.com."
-#       tsigSecretAlg: "hmac-sha512"
-#       tsigKeyname: "krebiehl.com."
-# dependsOn:
-#   - name: fleet-cluster-essentials-edns
+defaultNamespace: external-dns
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  version: 8.7.1
+  chart: external-dns
+  releaseName: external-dns
+  valuesFrom:
+    - secretKeyRef:
+        name: krebiehl-dns-tsig
+        key: tsigSecret
+  values:
+    txtOwnerId: global.fleet.clusterName
+    provider: rfc2136
+    rfc2136:
+      host: "172.21.21.21"
+      port: 53
+      zone: "krebiehl.com."
+      tsigSecretAlg: "hmac-sha512"
+      tsigKeyname: "krebiehl.com."
+dependsOn:
+  - name: fleet-cluster-essentials-edns-secret
