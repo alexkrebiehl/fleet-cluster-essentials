@@ -1,7 +1,7 @@
 defaultNamespace: external-dns
 helm:
   repo: https://charts.bitnami.com/bitnami
-  version: "6.7.3"
+  version: "8.7.1"
   chart: external-dns
   releaseName: external-dns
   valuesFrom:
