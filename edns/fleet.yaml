@@ -1,7 +1,7 @@
 defaultNamespace: external-dns
 helm:
-  repo: https://kubernetes-sigs.github.io/external-dns/
-  version: 1.15.0
+  repo: https://charts.bitnami.com/bitnami
+  version: "6.7.3"
   chart: external-dns
   releaseName: external-dns
   valuesFrom:
@@ -9,7 +9,7 @@ helm:
         name: edns-secret-values
         key: values.yaml
   values:
-    txtOwnerId: global.fleet.clusterName
+    txtOwnerId: "${ global.fleet.clusterName }"
     provider:
       name: rfc2136
       rfc2136:
