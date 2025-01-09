@@ -17,3 +17,5 @@ helm:
       zone: "krebiehl.com."
       tsigSecretAlg: "hmac-sha512"
       tsigKeyname: "krebiehl.com."
+dependsOn:
+  - name: external-dns-secret
