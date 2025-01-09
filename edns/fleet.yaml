@@ -9,7 +9,7 @@ helm:
         name: edns-secret-values
         key: values.yaml
   values:
-    txtOwnerId: "${ global.fleet.clusterName }"
+    txtOwnerId: "fleet-test"
     provider: rfc2136
     rfc2136:
       host: "172.21.21.21"
