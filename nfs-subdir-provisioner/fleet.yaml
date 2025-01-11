@@ -7,4 +7,4 @@ helm:
   values:
     nfs:
       server: diskstation.krebiehl.com
-      path: /volume1/nfs-pv
+      path: "/volume1/nfs-pv/${ .ClusterName }"
