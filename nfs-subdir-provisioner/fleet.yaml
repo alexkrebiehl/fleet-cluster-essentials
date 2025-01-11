@@ -1,0 +1,10 @@
+defaultNamespace: nfs-storage-provisioner
+helm:
+  repo: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner
+  version: 4.0.16
+  chart: nfs-subdir-external-provisioner
+  releaseName: nfs-subdir-external-provisioner
+  values:
+    nfs:
+      server: diskstation.krebiehl.com
+      path: /volume1/nfs-pv
