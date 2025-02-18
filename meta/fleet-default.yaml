@@ -24,7 +24,7 @@ spec:
   # Any branch can be watched, this field is optional. If not specified the
   # branch is assumed to be master
   #
-  branch: master
+  branch: main
 
   # A specific commit or tag can also be watched.
   #
