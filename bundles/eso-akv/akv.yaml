@@ -9,10 +9,10 @@ spec:
       vaultUrl: "https://alexs-test-vault.vault.azure.net/"
       authSecretRef:
         clientId:
-          namespace: external-secrets
-          name: azure-secret-sp
+          namespace: kube-system
+          name: eso-azure-secret-sp
           key: ClientID
         clientSecret:
-          namespace: external-secrets
-          name: azure-secret-sp
+          namespace: kube-system
+          name: eso-azure-secret-sp
           key: ClientSecret
