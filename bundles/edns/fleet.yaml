@@ -18,4 +18,4 @@ helm:
       tsigSecretAlg: "hmac-sha512"
       tsigKeyname: "krebiehl.com."
 dependsOn:
-  - name: essentials-edns-secret
+  - name: essentials-bundles-edns-secret

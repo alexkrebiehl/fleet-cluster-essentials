@@ -1,4 +1,4 @@
 defaultNamespace: cert-manager
 dependsOn:
-  - name: essentials-cert-manager
-  - name: essentials-eso-akv
+  - name: essentials-bundles-cert-manager
+  - name: essentials-bundles-eso-akv
