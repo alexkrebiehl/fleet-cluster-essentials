@@ -129,4 +129,5 @@ spec:
   # more information.
   # If empty, the "default" cluster group is used.
   #
-  # targets: ...
+  targets:
+    - clusterSelector: {} # All clusters
